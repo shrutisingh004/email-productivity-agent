@@ -1,4 +1,4 @@
-# 📧 Email Productivity Agent
+# Email Productivity Agent
 
 A prompt-driven intelligent email management system that uses LLM to categorize emails, extract action items, generate replies, and provide chat-based inbox interaction.
 
@@ -23,4 +23,5 @@ A prompt-driven intelligent email management system that uses LLM to categorize 
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
+
    cd email-productivity-agent
