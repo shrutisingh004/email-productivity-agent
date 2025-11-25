@@ -6,7 +6,7 @@ from database import Database
 class EmailProcessor:
     def __init__(self):
         self.db = Database()
-        self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY', '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'))
+        self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY', 'api-key'))
         self.model = "gpt-3.5-turbo"
     
     def call_llm(self, prompt, system_message=None):
@@ -117,4 +117,5 @@ class EmailProcessor:
             "body": body.strip(),
             "to": original_email['from'] if original_email else "",
             "in_reply_to": original_email['id'] if original_email else None
+
         }
