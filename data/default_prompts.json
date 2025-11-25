@@ -1,0 +1,22 @@
+{
+  "categorization": {
+    "name": "categorization",
+    "content": "Categorize emails into: Important, Newsletter, Spam, To-Do, Project Update.\n\nImportant: Urgent emails requiring immediate attention\nNewsletter: Marketing or informational emails\nSpam: Unwanted or promotional emails\nTo-Do: Emails containing direct requests requiring user action\nProject Update: Progress reports or project status emails\n\nRespond with only the category name.",
+    "description": "Categorize emails into predefined categories"
+  },
+  "action_extraction": {
+    "name": "action_extraction",
+    "content": "Extract tasks and action items from the email. Respond in JSON format:\n{\n    \"tasks\": [\n        {\n            \"task\": \"description of the task\",\n            \"deadline\": \"deadline if mentioned\",\n            \"priority\": \"high/medium/low\"\n        }\n    ]\n}\n\nIf no tasks are found, return empty tasks array.",
+    "description": "Extract action items and tasks from emails"
+  },
+  "auto_reply": {
+    "name": "auto_reply",
+    "content": "Draft a polite and professional email reply. Consider the context and tone of the original email.\n\nIf it's a meeting request, ask for an agenda.\nIf it's a task request, acknowledge receipt and provide a tentative timeline.\nKeep replies concise and professional.",
+    "description": "Generate automatic email replies"
+  },
+  "summary": {
+    "name": "summary",
+    "content": "Summarize this email in 2-3 bullet points highlighting key information and required actions.",
+    "description": "Generate email summaries"
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "from": "project.manager@company.com",
+    "subject": "Weekly Project Sync Meeting",
+    "body": "Hi team,\n\nLet's schedule our weekly project sync for Thursday at 2 PM. Please come prepared with updates on your respective tasks.\n\nAlso, remember that the Q3 report deadline is next Friday. Please submit your sections by EOD Thursday.\n\nBest regards,\nSarah",
+    "date": "2024-01-15 09:30:00"
+  },
+  {
+    "id": "2",
+    "from": "hr@company.com", 
+    "subject": "Benefits Enrollment Reminder",
+    "body": "Dear Employee,\n\nThis is a reminder that benefits enrollment closes this Friday. Please log into the portal and make your selections.\n\nIf you have any questions, contact HR.\n\nThank you,\nHR Department",
+    "date": "2024-01-15 11:15:00"
+  },
+  {
+    "id": "3",
+    "from": "tech-news@newsletter.com",
+    "subject": "AI Developments Weekly", 
+    "body": "This week in AI: New breakthroughs in language models, industry updates, and more...",
+    "date": "2024-01-15 08:00:00"
+  },
+  {
+    "id": "4",
+    "from": "client@clientcompany.com",
+    "subject": "Urgent: Website Issue",
+    "body": "Hello,\n\nWe're experiencing a critical issue with our website. The payment gateway is not working. Can you please look into this immediately?\n\nWe need this fixed by end of day today.\n\nThanks,\nJohn Client",
+    "date": "2024-01-15 10:45:00"
+  },
+  {
+    "id": "5", 
+    "from": "marketing@company.com",
+    "subject": "Q1 Marketing Campaign Results",
+    "body": "Team,\n\nAttached are the Q1 marketing campaign results. We exceeded our KPIs by 15%. Great work everyone!\n\nOur next campaign planning session is scheduled for next Monday.\n\nRegards,\nMarketing Team",
+    "date": "2024-01-14 16:20:00"
+  },
+  {
+    "id": "6",
+    "from": "noreply@bank.com", 
+    "subject": "Your statement is ready",
+    "body": "Your monthly account statement is now available for download.",
+    "date": "2024-01-14 14:30:00"
+  },
+  {
+    "id": "7",
+    "from": "ceo@company.com",
+    "subject": "All Hands Meeting Next Week", 
+    "body": "Hello everyone,\n\nWe'll have an all-hands meeting next Wednesday at 10 AM to discuss company strategy and upcoming initiatives.\n\nPlease block your calendars.\n\nBest,\nCEO",
+    "date": "2024-01-14 13:15:00"
+  },
+  {
+    "id": "8",
+    "from": "colleague@company.com",
+    "subject": "Need your feedback on design mockups",
+    "body": "Hi,\n\nCould you please review the attached design mockups and provide feedback by tomorrow? We need to finalize the designs for the client presentation on Friday.\n\nThanks!",
+    "date": "2024-01-14 11:45:00"
+  },
+  {
+    "id": "9",
+    "from": "updates@linkedin.com",
+    "subject": "Weekly digest from your network",
+    "body": "See what's happening in your professional network this week...", 
+    "date": "2024-01-14 10:00:00"
+  },
+  {
+    "id": "10",
+    "from": "it-support@company.com",
+    "subject": "System Maintenance Tonight",
+    "body": "Important: There will be system maintenance tonight from 10 PM to 2 AM. Some services may be unavailable during this time.\n\nPlan your work accordingly.\n\nIT Department",
+    "date": "2024-01-14 09:30:00"
+  }
+]
