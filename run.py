@@ -12,7 +12,7 @@ def start_backend():
 
 def start_frontend():
     print("Starting frontend...")
-    time.sleep(2)  # Wait for backend to start
+    time.sleep(2)
     frontend_process = subprocess.Popen([
         "streamlit", "run", "frontend/app.py"
     ], cwd=os.getcwd())
@@ -30,7 +30,6 @@ if __name__ == "__main__":
         print("Frontend: http://localhost:8501")
         print("\nPress Ctrl+C to stop the application")
         
-        # Wait for processes
         backend_process.wait()
         frontend_process.wait()
         
@@ -40,4 +39,5 @@ if __name__ == "__main__":
         frontend_process.terminate()
         backend_process.wait()
         frontend_process.wait()
+
         print("Application stopped")
