@@ -8,7 +8,6 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-# Initialize components
 db = Database()
 email_processor = EmailProcessor()
 
@@ -32,7 +31,7 @@ def get_email(email_id):
         return jsonify(email)
     return jsonify({"error": "Email not found"}), 404
 
-@app.route('/api/emails/example@gmail.com/process', methods=['POST'])
+@app.route('/api/emails/<email_id>/process', methods=['POST'])
 def process_email(email_id):
     try:
         email = db.get_email(email_id)
@@ -124,4 +123,5 @@ def generate_draft():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
+
     app.run(debug=True, port=5000)
