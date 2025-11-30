@@ -6,7 +6,7 @@ from database import Database
 class EmailProcessor:
     def __init__(self):
         self.db = Database()
-        self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY', 'api-key'))
+        self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY', 'your-api-key'))
         self.model = "gpt-3.5-turbo"
     
     def call_llm(self, prompt, system_message=None):
@@ -119,3 +119,4 @@ class EmailProcessor:
             "in_reply_to": original_email['id'] if original_email else None
 
         }
+
