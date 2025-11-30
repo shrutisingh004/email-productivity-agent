@@ -9,7 +9,7 @@ class Database:
         self.init_db()
     
     def init_db(self):
-        """Initialize database tables"""
+        #Initialize database tables
         os.makedirs('data', exist_ok=True)
         
         conn = sqlite3.connect(self.db_path)
@@ -142,7 +142,7 @@ Keep replies concise and professional.''',
         conn.close()
     
     def create_mock_data(self):
-        """Create sample mock email data"""
+        #Create sample mock email data
         mock_emails = [
             {
                 "id": "1",
@@ -221,7 +221,7 @@ Keep replies concise and professional.''',
             json.dump(mock_emails, f, indent=2)
     
     def get_emails(self):
-        """Get all emails"""
+        #Get all emails
         conn = sqlite3.connect(self.db_path)
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
@@ -241,7 +241,7 @@ Keep replies concise and professional.''',
         return emails
     
     def get_email(self, email_id):
-        """Get specific email by ID"""
+        #Get specific email by ID
         conn = sqlite3.connect(self.db_path)
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
@@ -261,7 +261,7 @@ Keep replies concise and professional.''',
         return None
     
     def update_email_processing(self, email_id, processing_results):
-        """Update email with processing results"""
+        #Update email with processing results
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
         
@@ -280,7 +280,7 @@ Keep replies concise and professional.''',
         conn.close()
     
     def get_prompts(self):
-        """Get all prompt templates"""
+        #Get all prompt templates
         conn = sqlite3.connect(self.db_path)
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
@@ -292,7 +292,7 @@ Keep replies concise and professional.''',
         return prompts
     
     def update_prompt(self, name, content):
-        """Update a prompt template"""
+        #Update a prompt template
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
         
@@ -306,7 +306,7 @@ Keep replies concise and professional.''',
         conn.close()
     
     def save_draft(self, draft_data):
-        """Save email draft"""
+        #Save email draft
         import uuid
         
         conn = sqlite3.connect(self.db_path)
@@ -328,4 +328,5 @@ Keep replies concise and professional.''',
         
         conn.commit()
         conn.close()
+
         return draft_id
