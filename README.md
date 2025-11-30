@@ -22,6 +22,7 @@ A prompt-driven intelligent email management system that uses LLM to categorize 
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/shrutisingh004/email-productivity-agent.git
 
    cd email-productivity-agent
+
